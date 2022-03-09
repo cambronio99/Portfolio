@@ -1,22 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-  <style>
+  <head>
+    <style>
       html {
         height: 100%
       }
       body {
         color: midnightblue;
-        background-image:linear-gradient(60deg, pink, skyblue);
+        background-image:linear-gradient(-30deg, midnightblue, #f5bb);
         font-family: sans-serif;
+        margin: 0px;
+        padding: 15px
       }
       ul {
         font-weight:bold;
       }
-  </style>
+
+      #myNavBar ul {
+        background: linear-gradient(100deg, midnightblue, #f5bb);
+        list-style-type: none;
+        padding-inline-start: 0px;
+        color: white;
+      }
+
+      #myNavBar ul li {
+        display: inline-block;
+        padding: 12px 24px;
+      }
+
+      #myNavBar ul li:hover {
+        background: #D8DE
+      }
+
+      #cta {
+        float: right;
+      }
+      </style>
       <title>mui world</title>
     </head>
   <body>
+    <nav id="myNavBar">
+      <ul>
+        <li>Home</li>
+        <li>Assignments</li>
+        <li>About Me</li>
+        <li id="cta">Sign Up</li>
+      </ul>
+    </nav>
     <h1>welcome to my portfolio.</h1>
     <hr>
     <hr>
