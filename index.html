@@ -10,7 +10,7 @@
         background-image:linear-gradient(-30deg, midnightblue, #f5bb);
         font-family: sans-serif;
         margin: 0px;
-        padding: 15px
+        padding: 25px
       }
       ul {
         font-weight:bold;
@@ -26,23 +26,32 @@
       #myNavBar ul li {
         display: inline-block;
         padding: 12px 24px;
+        text-decoration:none;
       }
 
       #myNavBar ul li:hover {
-        background: #D8DE
+        background: midnightblue
       }
 
       #cta {
         float: right;
       }
+
+      #myNavBar a:-webkit-any-link {
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+
       </style>
       <title>mui world</title>
     </head>
   <body>
     <nav id="myNavBar">
       <ul>
-        <li>Home</li>
-        <li>Assignments</li>
+        <li>Home<a href="#"></a></li>
+        <li><a href="assignments/assignmentBoss.html">Assignments</a></li>
         <li>About Me</li>
         <li id="cta">Sign Up</li>
       </ul>
