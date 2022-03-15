@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style media="screen">
+      html {
+        height: 100%
+      }
+
+      body {
+        color: midnightblue;
+        background-image:linear-gradient(-30deg, midnightblue, #f5bb);
+        font-family: sans-serif;
+        margin: 0px;
+        font-weight: bold
+      }
+
+       #fruits {
+        font-weight:bold;
+        background: black;
+        display: inline-block;
+        padding: 25px;
+        border-radius: 18px;
+        margin-left: 35px
+      }
+
+      #fruits li:first-child {
+        color: darkorange;
+        font-family: krungthep
+      }
+
+      #fruits li:nth-child(2) {
+        color: red;
+        font-family: serif
+      }
+
+      #fruits li:last-child {
+        color: gold;
+        font-family: sans-serif
+      }
+
+      #link a:-webkit-any-link {
+        color: white;
+        text-decoration: none;
+        float: left;
+      }
+
+      #link a:-webkit-any-link:hover {
+        color: midnightblue;
+      }
+
+      #link li {
+        list-style-type: none;
+        margin-left: 0px
+      }
+
+      #myNavBar ul {
+        background: linear-gradient(100deg, midnightblue, #f5bb);
+        list-style-type: none;
+        padding-inline-start: 0px;
+        color: white;
+      }
+
+      #myNavBar ul li {
+        display: inline-block;
+        padding: 12px 24px;
+        text-decoration:none;
+      }
+
+      #myNavBar ul li:hover {
+        background: midnightblue
+      }
+
+      #cta {
+        float: right;
+      }
+
+      #myNavBar a:-webkit-any-link {
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+      }
+    </style>
+    <title>Introduction to Navigation</title>
+  </head>
+  <body>
+    <nav id="myNavBar">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="assignments/assignmentBoss.html">Assignments</a></li>
+        <li>About Me</li>
+        <li id="cta">Sign Up</li>
+      </ul>
+    </nav>
+    <ul id="fruits">
+      <li>oranges</li>
+      <li>apples</li>
+      <li>bananas</li>
+    </ul>
+    <ul id="link">
+      <li><a href="assignmentBoss.html">back to the assignment map!</a></li>
+    </ul>
+  </body>
+</html>
