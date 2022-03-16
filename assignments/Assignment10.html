@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      html {
+        height: 100%
+      }
+      body {
+        color: midnightblue;
+        background-image:linear-gradient(-30deg, midnightblue, #f5bb);
+        font-family: sans-serif;
+        margin: 0px;
+        padding: 25px
+      }
+      ul {
+        font-weight:bold;
+      }
+
+      #myNavBar ul {
+        background: linear-gradient(100deg, midnightblue, #f5bb);
+        list-style-type: none;
+        padding-inline-start: 0px;
+        color: white;
+      }
+
+      #myNavBar ul li {
+        display: inline-block;
+        padding: 12px 24px;
+        text-decoration:none;
+      }
+
+      #myNavBar ul li:hover {
+        background: midnightblue
+      }
+
+      #cta {
+        float: right;
+      }
+
+      #myNavBar a:-webkit-any-link {
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      #bills th {
+        padding: 20px;
+      }
+
+      #bills td {
+        padding: 20px;
+      }
+
+      #bills td:nth-child(1) {
+        background-color: #f0f0f0
+      }
+
+      #bills th:nth-child(1) {
+        background-color: #f0f0f0
+      }
+
+      #bills th {
+        background-color: lightblue
+      }
+
+      #bills td {
+        background-color: lightblue
+      }
+
+      .center {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      </style>
+      <title>mui world</title>
+    </head>
+  <body>
+    <nav id="myNavBar">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="assignments/assignmentBoss.html">Assignments</a></li>
+        <li><a href="Navbar/aboutme.html">About Me</a></li>
+        <li id="cta"><a href="Navbar/signup.html">Sign Up</a></li>
+      </ul>
+    </nav>
+    <table id="bills" class="center">
+      <h1>Monthly Bills</h1>
+      <tr>
+        <th>Bill</th>
+        <th>April</th>
+        <th>May</th>
+        <th>June</th>
+      </tr>
+      <tr>
+        <td><b>Phone</b></td>
+        <td>$120</td>
+        <td>$140</td>
+        <td>$140</td>
+      </tr>
+      <tr>
+        <td><b>Gas</b></td>
+        <td>$90</td>
+        <td>$100</td>
+        <td>$150</td>
+      </tr>
+      <tr>
+        <td><b>Food</b></td>
+        <td>$280</td>
+        <td>$280</td>
+        <td>$300</td>
+      </tr>
+    </table>
+  </body>
+</html>
