@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Table Examples</title>
+    <style media="screen">
+      #uglytable,
+      #uglytable caption,
+      #uglytable th,
+      #uglytable td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 12px;
+      }
+      #uglytable {
+        margin-bottom: 48px;
+      }
+
+      #prettytable {
+        border-collapse: collapse;
+      }
+      #prettytable th {
+        padding-bottom: 12px;
+        padding-right: 24px;
+      }
+      #prettytable td {
+        padding: 4px 0;
+      }
+      #prettytable tr:nth-child(even) {
+        background-color: #f0f0f0
+      }
+      #prettytable tr:hover {
+        background-color: #E0FFE0;
+        cursor: default;
+      }
+    </style>
+  </head>
+  <body>
+
+    <table id="uglytable">
+      <caption>This is an ugly table</caption>
+      <colgroup>
+        <col>
+        <col>
+        <col>
+        <col>
+      </colgroup>
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Favorite Animal</th>
+          <th>Favorite Food</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Suge</td>
+          <td>Knight</td>
+          <td>Dog</td>
+          <td>Wrap</td>
+        </tr>
+        <tr>
+          <td>Ed</td>
+          <td>Reed</td>
+          <td>Raven</td>
+          <td>Steak</td>
+        </tr>
+        <tr>
+          <td>Martin</td>
+          <td>Shkreli</td>
+          <td>Lion</td>
+          <td>Filet Minon</td>
+        </tr>
+        <tr>
+          <td>Cameron</td>
+          <td>Owings</td>
+          <td>Sloth</td>
+          <td>Parma Rosa</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table id="prettytable">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Favorite Animal</th>
+          <th>Favorite Food</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Suge</td>
+          <td>Knight</td>
+          <td>Dog</td>
+          <td>Wrap</td>
+        </tr>
+        <tr>
+          <td>Ed</td>
+          <td>Reed</td>
+          <td>Raven</td>
+          <td>Steak</td>
+        </tr>
+        <tr>
+          <td>Martin</td>
+          <td>Shkreli</td>
+          <td>Lion</td>
+          <td>Filet Minon</td>
+        </tr>
+        <tr>
+          <td>Cameron</td>
+          <td>Owings</td>
+          <td>Sloth</td>
+          <td>Parma Rosa</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </body>
+</html>
