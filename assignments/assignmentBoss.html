@@ -6,8 +6,7 @@
         height: 100%
         }
       body {
-        color: midnightblue;
-        background-image:linear-gradient(-30deg, midnightblue, #f5bb);
+        background-image: url("../images/speckbg.png");
         font-family: sans-serif;
         margin: 0px;
         padding: 25px
@@ -17,10 +16,11 @@
         }
 
       #myNavBar ul {
-        background: linear-gradient(100deg, midnightblue, #f5bb);
+        background: linear-gradient(#922724, #E34234);
         list-style-type: none;
         padding-inline-start: 0px;
         color: white;
+        border-radius: 50px
         }
 
       #myNavBar ul li {
@@ -29,8 +29,16 @@
         }
 
       #myNavBar ul li:hover {
-        background: midnightblue
+        background: #E34234
         }
+
+      #myNavBar ul li:first-child:hover {
+        border-radius: 49px 0px 0px 50px
+      }
+
+      #myNavBar ul li:last-child:hover {
+        border-radius: 0 49px 49px 0;
+      }
 
       #cta {
         float: right;
@@ -43,10 +51,10 @@
         }
 
         #assignments a:hover {
-          color: midnightblue;
+          color: #2b7a78;
           background-color: white;
-          border-radius: 10px;
-          padding: 4px;
+          border-radius: 15px;
+          padding: 5px;
         }
 
       #assignments {
@@ -57,7 +65,7 @@
         }
 
         h1 {
-          color: white;
+          color: #E34234;
           text-align: center;
           text-decoration: underline;
         }
@@ -67,7 +75,7 @@
       </style>
       <title>GDWD Assignments</title>
     </head>
-  <body>
+  <body src="../images/speckbg.png">
 
     <nav id="myNavBar">
       <ul>
@@ -93,7 +101,7 @@
           Familiarizing myself with lists and links, and building a basic navigation bar
         </a> </li>
         <li><a href="Assignment9.html">
-          Learning about floats and clears,
+          Learning the basics of floats and clears
         </a></li>
         <li><a href="Assignment10.html">
           Learning the basics of tables and "nthchild"
