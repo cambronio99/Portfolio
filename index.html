@@ -2,66 +2,73 @@
 <html lang="en">
   <head>
     <style>
+
+      @font-face {
+        font-family: "akira";
+        src: url("fonts/Akira.otf") format("opentype");
+      }
+
       html {
         height: 100%
       }
+
       body {
-        color: midnightblue;
-        background-image:linear-gradient(-30deg, midnightblue, #f5bb);
-        font-family: sans-serif;
+        color: #F27405;
+        background-color: #FFD076;
+        font-family: akira;
         margin: 0px;
-        padding: 25px
-      }
-      ul {
-        font-weight:bold;
       }
 
       #myNavBar ul {
-        background: linear-gradient(100deg, midnightblue, #f5bb);
         list-style-type: none;
         padding-inline-start: 0px;
-        color: white;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%
       }
 
       #myNavBar ul li {
-        display: inline-block;
-        padding: 12px 24px;
+        font-size: 70px;
         text-decoration:none;
-      }
-
-      #myNavBar ul li:hover {
-        background: midnightblue
-      }
-
-      #cta {
-        float: right;
+        text-align: center;
       }
 
       #myNavBar a:-webkit-any-link {
-        color: white;
         cursor: pointer;
         text-decoration: none;
       }
 
       h1  {
         text-align: center;
+        font-size: 90px;
+        padding: 0px;
+        text-shadow: 4px 4px #f2f2f2
       }
 
       h2 {
         text-align: center;
       }
 
-      a {
-        color: white;
-        text-decoration: none;
+      p {
+        text-align: center;
+        padding: 0px;
+        margin-top: -60px;
+        margin-bottom: 50px;
+        font-size: 20px;
       }
 
-      #recent a:hover {
-        color: midnightblue;
-        background-color: white;
-        border-radius: 10px;
-        padding: 4px;
+      a {
+        color: #F27405;
+        text-decoration: none;
+        text-shadow: 3px 3px #F2F2F2;
+        transition-property: color;
+        transition-duration: 1s;
       }
+
+      a:hover {
+        color: #185905;
+      }
+
 
       #recent li {
         list-style-type: none;
@@ -73,26 +80,16 @@
       <title>mui world</title>
     </head>
   <body>
+    <h1>Cameron Owings</h1>
+    <p>
+      graphic design - web development - music production
+    </p>
     <nav id="myNavBar">
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="assignments/assignmentBoss.html">Assignments</a></li>
         <li><a href="Navbar/aboutme.html">About Me</a></li>
-        <li id="cta"><a href="Navbar/signup.html">Sign Up</a></li>
       </ul>
     </nav>
-    <h1>welcome to my portfolio.</h1>
-    <hr>
-    <hr>
-    <p><b>it's not actually as empty as it looks, i just left plenty of room
-    to change my mind.</b></p>
-    <hr>
-    <hr>
-    <h2>Most Recent</h2>
-  <ul id="recent">
-    <li><a href="assignments/Assignment10.html">
-      my most recent project: learning about tables
-    </a></li>
-  </ul>
   </body>
 </html>

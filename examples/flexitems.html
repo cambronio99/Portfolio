@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Flex Items</title>
+    <style media="screen">
+      .flexchild {
+        background-color: lavender;
+        border: 2px solid grey;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 24px;
+        font-weight: bold;
+        margin: 10px;
+        padding: 8px 14px;
+        text-align: center;
+      }
+
+      .container {
+        background-color: hotpink;
+        border-radius: 4px;
+        display: flex;
+      }
+
+      .flexwrap {
+        flex-wrap: wrap;
+      }
+
+      .flexChildOrder1 {
+        order: 1;
+      }
+
+      .flexChildOrder2 {
+        order: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container flexwrap">
+      <div class="flexchild">A</div>
+      <div class="flexchild flexChildOrder1">B</div>
+      <div class="flexchild">C</div>
+      <div class="flexchild flexChildOrder2">D</div>
+    </div>
+  </body>
+</html>
