@@ -24,7 +24,6 @@
         padding-inline-start: 0px;
         margin-left: auto;
         margin-right: auto;
-        width: 60%
       }
 
       #myNavBar ul li {
@@ -55,6 +54,7 @@
         margin-top: -60px;
         margin-bottom: 50px;
         font-size: 20px;
+        color: #188905
       }
 
       a {
@@ -63,10 +63,12 @@
         text-shadow: 3px 3px #F2F2F2;
         transition-property: color;
         transition-duration: 1s;
+        margin-left: auto;
+        margin-right: auto;
       }
 
       a:hover {
-        color: #185905;
+        color: #188905;
       }
 
 
@@ -74,6 +76,32 @@
         list-style-type: none;
         text-align: center;
         margin-left: -50px
+      }
+
+      .multicam img {
+        position: relative;
+        border: 7px solid #f2f2f2;
+        height: 300px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+      .multicam img:nth-child(even) {
+        border: 7px solid
+      }
+
+      .multicam {
+        display: flex;
+      }
+
+      @keyframes carousel {
+        0% {right: 0px}
+        100% {right: 1276px}
+      }
+
+      .multicam img{
+        animation:carousel 10s infinite;
+        animation-timing-function: linear;
       }
 
       </style>
@@ -91,5 +119,19 @@
         <li><a href="Navbar/aboutme.html">About Me</a></li>
       </ul>
     </nav>
+    <div class="multicam">
+      <img src="images/multicam.png">
+      <img src="images/slide.png">
+      <img src="images/top2.png">
+      <img src="images/costarica.png">
+      <img src="images/multicam.png">
+      <img src="images/slide.png">
+      <img src="images/top2.png">
+      <img src="images/costarica.png">
+      <img src="images/multicam.png">
+      <img src="images/slide.png">
+      <img src="images/top2.png">
+      <img src="images/costarica.png">
+  </div>
   </body>
 </html>

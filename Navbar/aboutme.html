@@ -14,6 +14,16 @@
         src: url("../fonts/Akira.otf") format("opentype");
       }
 
+      @font-face {
+        font-family: "moon";
+        src: url("../fonts/Moonget.otf") format("opentype");
+      }
+
+      @font-face {
+        font-family: "soul";
+        src: url("../fonts/Soulmaze.otf") format("opentype");
+      }
+
       html {
         height: 100%
       }
@@ -48,11 +58,16 @@
         text-align: center;
         font-size: 90px;
         padding: 0px;
-        text-shadow: 4px 4px #f2f2f2
+        text-shadow: 4px 4px #f2f2f2;
+        margin-top: 20px;
+        margin-right: 10px;
       }
 
       h2 {
         text-align: center;
+        font-size: 70px;
+        margin-bottom: 25px;
+        text-shadow: 4px 4px #f2f2f2;
       }
 
       p {
@@ -63,27 +78,53 @@
         font-size: 20px;
       }
 
+      p {
+        line-height: 30px;
+        background: -webkit-repeating-linear-gradient(#188905, #188905 30px, #185905 30px, #185905 60px);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+      }
+
       a {
         color: #F27405;
         text-decoration: none;
         text-shadow: 3px 3px #F2F2F2;
         transition-property: color;
-        transition-duration: 1s;
-      }
-
-      a:hover {
-        color: #185905;
+        transition-duration: .5s;
       }
 
       #backarrow {
-        
+        float: right;
+        margin-right: 50px;
+        font-size: 70px;
+        margin-top: -165px;
+        margin-left: none;
       }
 
+      a:hover {
+        color: #188905;
+      }
 
       #recent li {
         list-style-type: none;
         text-align: center;
         margin-left: -50px
+      }
+
+      #aboutme {
+        margin: 10px;
+        padding: 5px;
+        color: #188905;
+        font-family: soul;
+        font-size: 25px;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #f2f2f2
+        }
+
+      b {
+        color: #185905
       }
 
       </style>
@@ -94,11 +135,40 @@
     <p>
       graphic design - web development - music production
     </p>
-    <i id="backarrow" class="fa-solid fa-arrow-left-long"></i>
-    <nav id="myNavBar">
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-      </ul>
-    </nav>
+    <a href="../index.html">
+      <i id="backarrow" class="fa-solid fa-arrow-left-long"></i>
+    </a>
+    <h2>
+      About Me
+    </h2>
+    <p id="aboutme">
+      For as long as I can remember, I have wanted to
+      make music for a living,
+      I like to think that's my dad's fault.
+      when I was a kid, he would sing me a song every night before
+      bed.
+      Jim Croce, The Carpenters, and James Taylor.
+      it was the best part of my day, during the best part of my life.
+      I remember how those songs used to make me feel,
+      even though my father said he hated his singing voice, he was my favorite musician.
+      <br>
+      <br>
+      I started producing my own music as a hobby in 2016 while
+      I was still a high school student and, despite
+      spending so much time on it, didn't see it as anything more than
+      a fun hobby. I remember being stressed out about what I would do after I
+      graduated, when i realized that the only thing that I enjoyed doing, making music,
+      might have careers outside of being the artist. Everyone needs instrumentals, Promotion,
+      merchandise, all the behind the scenes stuff. I realized that I could be that guy.
+      <br>
+      <br>
+      On top of over 5 years of experience in both graphic design and music production,
+      I have also graduated from the Recording Arts & Sound Production program
+      at F.I.R.S.T. Institute, and I am currently attending their Graphic Design and
+      Web Development program.
+      <br>
+      I am on track to graduate in July 2022
+
+    </p>
   </body>
 </html>
