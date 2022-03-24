@@ -8,31 +8,28 @@
         src: url("fonts/Akira.otf") format("opentype");
       }
 
-      html {
-        height: 100%
-      }
-
       body {
         color: #F27405;
         background-color: #FFD076;
         font-family: akira;
         margin: 0px;
+        text-align: center;
       }
 
-      #myNavBar ul {
+      .myNavBar ul {
         list-style-type: none;
         padding-inline-start: 0px;
         margin-left: auto;
         margin-right: auto;
       }
 
-      #myNavBar ul li {
+      .myNavBar ul li {
         font-size: 70px;
         text-decoration:none;
         text-align: center;
       }
 
-      #myNavBar a:-webkit-any-link {
+      .myNavBar a:-webkit-any-link {
         cursor: pointer;
         text-decoration: none;
       }
@@ -86,12 +83,13 @@
         margin-right: 10px;
       }
 
-      .multicam img:nth-child(even) {
-        border: 7px solid
-      }
-
       .multicam {
         display: flex;
+      }
+
+      .multicam img{
+        animation:carousel 10s infinite;
+        animation-timing-function: linear;
       }
 
       @keyframes carousel {
@@ -99,10 +97,6 @@
         100% {right: 1276px}
       }
 
-      .multicam img{
-        animation:carousel 10s infinite;
-        animation-timing-function: linear;
-      }
 
       </style>
       <title>mui world</title>
@@ -112,26 +106,65 @@
     <p>
       graphic design - web development - music production
     </p>
-    <nav id="myNavBar">
+    <nav class="myNavBar">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="assignments/assignmentBoss.html">Assignments</a></li>
         <li><a href="Navbar/aboutme.html">About Me</a></li>
       </ul>
     </nav>
     <div class="multicam">
-      <img src="images/multicam.png">
-      <img src="images/slide.png">
-      <img src="images/top2.png">
-      <img src="images/costarica.png">
-      <img src="images/multicam.png">
-      <img src="images/slide.png">
-      <img src="images/top2.png">
-      <img src="images/costarica.png">
-      <img src="images/multicam.png">
-      <img src="images/slide.png">
-      <img src="images/top2.png">
-      <img src="images/costarica.png">
-  </div>
+      <a href="https://www.instagram.com/whoiscamui/" target="_blank">
+        <img src="images/multicam.png">
+      </a>
+      <a href="https://distrokid.com/hyperfollow/camui/slide" target="_blank">
+        <img src="images/slide.png">
+      </a>
+      <a href="https://distrokid.com/hyperfollow/camui/top2" target="_blank">
+        <img src="images/top2.png">
+      </a>
+      <a href="https://distrokid.com/hyperfollow/camui/costa-rica" target="_blank">
+        <img src="images/costarica.png">
+      </a>
+      <a href="https://www.instagram.com/whoiscamui/" target="_blank">
+        <img src="images/multicam.png">
+      </a>
+      <a href="https://distrokid.com/hyperfollow/camui/slide" target="_blank">
+        <img src="images/slide.png">
+      </a>
+      <a href="https://distrokid.com/hyperfollow/camui/top2" target="_blank">
+        <img src="images/top2.png">
+      </a>
+      <a href="https://distrokid.com/hyperfollow/camui/costa-rica" target="_blank">
+        <img src="images/costarica.png">
+      </a>
+      <a href="https://www.instagram.com/whoiscamui/" target="_blank">
+        <img src="images/multicam.png">
+      </a>
+      <a href="https://distrokid.com/hyperfollow/camui/slide" target="_blank">
+        <img src="images/slide.png">
+      </a>
+      <a href="https://distrokid.com/hyperfollow/camui/top2" target="_blank">
+        <img src="images/top2.png">
+      </a>
+      <a href="https://distrokid.com/hyperfollow/camui/costa-rica" target="_blank">
+        <img src="images/costarica.png">
+      </a>
+    </div>
+    <nav class="myNavBar">
+      <ul>
+      <li><a href="https://soundcloud.com/cambronio" target="_blank">
+        Soundcloud
+      </a></li>
+      <li><a href="https://open.spotify.com/artist/6ulPcgh94vuPkJiBF0rxo9?si=N7KSZimmS_W8LFw-wTIIBg">
+        Spotify
+      </a></li>
+      <li><a href="https://music.apple.com/us/artist/camui/1434191110">
+        Apple Music
+      </a></li>
+      <li><a href="https://linktr.ee/camuirealm" target="_blank">
+        Listen to My Friends
+      </a></li>
+    </nav>
+    <br><br>
+    <footer>カムイ</footer>
   </body>
 </html>
