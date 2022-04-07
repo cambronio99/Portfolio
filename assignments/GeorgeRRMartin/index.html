@@ -21,7 +21,22 @@
         text-align: center;
       }
 
+      .navbar {
+        font-family: kingman;
+        text-align: center;
+        font-size: 30px
+      }
 
+      .navbar li{
+        list-style-type: none;
+        display: inline;
+        margin: 10px;
+      }
+
+      .navbar li a {
+        text-decoration: none;
+        color: #671F28
+      }
 
       .flex-container {
         display: flex;
@@ -87,6 +102,23 @@
         h1 {
           font-size: 70px
         }
+
+        #home {
+          grid-area: home;
+        }
+
+        .navbar {
+          display: grid;
+          grid-template-areas:
+          "home home home"
+        }
+
+        .navbar li{
+          display: block;
+          margin: 25px;
+        }
+
+
       }
 
       @media (max-width: 738px) {
@@ -109,6 +141,19 @@
         h1 {
           font-size: 50px
         }
+
+        .navbar {
+          grid-template-areas:
+          "home home"
+        }
+
+        .navbar li {
+          margin: 15px
+        }
+
+        li a {
+          font-size: 25px;
+        }
       }
 
 
@@ -121,6 +166,17 @@
 
   <body>
     <h1>George R.R. Martin</h1>
+
+    <ul class="navbar">
+      <li id="home"><a href="#">Home</a></li>
+      <li><a href="#">Not A Blog</a></li>
+      <li><a href="#">About George</a></li>
+      <li><a href="#">Books</a></li>
+      <li><a href="#">For Fans</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Merchandise</a></li>
+
+    </ul>
 
     <div class="flex-container">
       <img id="fireBlood" src="../../images/FireBlood.jpeg" alt="">

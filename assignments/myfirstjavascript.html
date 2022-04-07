@@ -4,8 +4,46 @@
     <title>1st Javascript</title>
   </head>
   <body>
+
+    <input type="button" id="button1" value="Click 1">
+    <input type="button" id="colorButton" value="Click to Change Color">
+
     <script type="text/javascript">
       document.write("hello world");
+      let greeting = "hello world"
+
+      function logText(textTolog) {
+        console.log(textTolog)
+      }
+
+      logText(greeting)
+      logText('How are you doing?')
+      logText('Are you sure?')
+
+      let button1 = document.getElementById('button1');
+      button1.onclick = () => {
+        logText(button1.id);
+      };
+
+      function getRandomNumberBetween(lowValue, highValue) {
+        let range = highValue
+      }
+
+      function setRandomBackgroundColor() {
+        let body = document.getElementsByTagName('body')[0];
+        let r = getRandomNumberBetween(0, 255);
+        let g = getRandomNumberBetween(0, 255);
+        let b = getRandomNumberBetween(0, 255);
+
+        let colorValue = `rgb(${r}, ${g}, ${b})`;
+        body.style.backgroundColor = colorValue;
+        logText(colorValue);
+      }
+        let colorButton = document.getElementById('colorButton');
+        colorButton.onclick = setRandomBackgroundColor;
+
+
+
     </script>
   </body>
 </html>
