@@ -78,16 +78,44 @@
         max-width: 1450px;
       }
 
-      .menu {
-        display: grid;
+      .blog {
+        border: 5px solid #0d0d0d;
+        background-color: white;
+        color: black;
+        text-align: left;
+        padding: 12px;
+        grid-area: blog;
+      }
 
+      .blog h2 {
+        color: #0d0d0d;
+      }
+
+      .blog h3 {
+        color: navy;
+      }
+
+      .menu {
+        grid-area: menu;
       }
 
       .menu img {
-        width: 30%;
+        width: 100%;
         border: 5px solid #0d0d0d;
+        display: block;
+      }
+
+      .mygrid {
+        max-height: 500px;
+        display: grid;
+        justify-content: center;
         margin-left: auto;
         margin-right: auto;
+        grid-template-areas:
+        "menu blog blog"
+        "menu blog blog"
+        "menu blog blog";
+        grid-template-columns: 1fr 3fr
       }
 
       @media (max-width: 1080px) {
@@ -173,6 +201,14 @@
         li a {
           font-size: 25px;
         }
+
+        .mygrid {
+          grid-template-areas:
+          "menu menu menu"
+          "blog blog blog"
+          "blog blog blog"
+          "blog blog blog"
+        }
       }
 
 
@@ -200,19 +236,52 @@
 
     </ul>
 
-    <div class="flex-container">
-      <img id="fireBlood" src="../../images/FireBlood.jpeg" alt="">
-    </div>
+      <div class="flex-container">
+        <img id="fireBlood" src="../../images/FireBlood.jpeg" alt="">
+      </div>
 
-    <div class="flex-container">
-      <img id="flex-item-left" src="../../images/Cocteau.jpeg" alt="Cinema">
-      <img id="flex-item-mid" src="../../images/Newsletter.png" alt="Newsletter">
-      <img id="flex-item-right" src="../../images/DarkSword.jpeg" alt="DarkSword">
-    </div>
-
-    <div class="menu">
-      <img src="../../images/prop.png"
-
+      <div class="flex-container">
+        <img id="flex-item-left" src="../../images/Cocteau.jpeg" alt="Cinema">
+        <img id="flex-item-mid" src="../../images/Newsletter.png" alt="Newsletter">
+        <img id="flex-item-right" src="../../images/DarkSword.jpeg" alt="DarkSword">
+      </div>
+    <div class="mygrid">
+      <div class="menu">
+        <img src="../../images/prop.png">
+        <img src="../../images/publication.png">
+        <img src="../../images/appearance.png">
+        <img src="../../images/stagecoach.png">
+      </div>
+      <div class="blog">
+        <h2>Current GRRM Blog Posts</h2>
+          <h3>The Dragons Are Coming…</h3>
+            <p>… they’re on the wing, and will be arriving in August. Details here:
+              https://variety.com/2022/tv/news/game-of-thrones-house-of-the-dragon-premiere-date-1235215983/</p>
+          <h3>THE RISE OF THE DRAGON</h3>
+            <p>We’re so excited to announce The Rise of The Dragon, a lavish visual history
+              of House Targaryen – the iconic family at the heart of HBO’s Game of Thrones prequel
+              series, House of the Dragon – featuring over 180 all-new… </p>
+          <h3>Dealer Takes Two</h3>
+            <p>Kings and deuces may not be as iconic… or ominous… a poker hand as aces and eights,
+              but it’s not a bad hand to be dealt… and Tor will be dealing those cards to
+              all the Wild Cards fans out…</p>
+          <h3>Random Updates and Bits o’ News</h3>
+            <p>I look around, and I don’t know where 2021 went.   I blinked and it was gone.
+              Not a year that I am going to mourn much, any more than 2020.  A global pandemic,
+              so many deaths (including friends of mine,…</p>
+          <h3>World of Fire and Blood Calendar 2023</h3>
+            <p>We have some beautiful art for next years calendar. This time around
+              we’re focusing on a whole World of Ice and Fire theme with amazing new artwork by a
+              collaboration of amazing artists.  Check out some of their outstanding work coming…</p>
+          <h3>End of an Era</h3>
+            <p>Our friend Janis Ian was in Santa Fe last week, at the Jean Cocteau Cinema.
+              It was the first stop of her new tour.  She did three shows for us (Thursday,
+              Friday, and Saturday nights, all sold out), and on…</p>
+          <h3>The Cards Keep Turning</h3>
+            <p>Wild Cards fans have a lot to look forward to in the next couple of years,
+              in addition to the Marvel comics series announced below. We have three new
+              books in the pipeline.   FULL HOUSE will be a collection of…</p>
+      </div>
     </div>
   </body>
 </html>
