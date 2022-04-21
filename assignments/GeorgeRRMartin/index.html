@@ -107,15 +107,16 @@
 
       .mygrid {
         max-height: 500px;
+        position: absolute;
         display: grid;
         justify-content: center;
         margin-left: auto;
         margin-right: auto;
         grid-template-areas:
-        "menu blog blog"
-        "menu blog blog"
-        "menu blog blog";
-        grid-template-columns: 1fr 3fr
+        ". menu blog blog ."
+        ". menu blog blog ."
+        ". menu blog blog .";
+        grid-template-columns: 1fr 6fr 6fr 6fr 1fr
       }
 
       @media (max-width: 1080px) {
@@ -202,7 +203,6 @@
           font-size: 25px;
         }
 
-
         .mygrid {
           grid-template-areas:
           "menu menu menu"
@@ -210,11 +210,9 @@
           "blog blog blog"
           "blog blog blog";
           max-width: 800px;
+          grid-template-columns: 1fr 3fr 3fr
         }
       }
-
-
-
 
     </style>
 
@@ -222,22 +220,23 @@
   </head>
 
   <body>
-    <img id="lannister" src="../../images/Lannister.png" alt="Lannister">
+    <header>
+      <img id="lannister" src="../../images/Lannister.png" alt="Lannister">
+      <h1>George R.R. Martin</h1>
+    </header>
+    <nav>
+      <ul class="navbar">
+        <li id="home"><a href="#">Home</a></li>
+        <li><a href="#">Not A Blog</a></li>
+        <li><a href="#">About George</a></li>
+        <li><a href="#">Books</a></li>
+        <li><a href="#">For Fans</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Merchandise</a></li>
+      </ul>
+    </nav>
 
-
-    <h1>George R.R. Martin</h1>
-
-    <ul class="navbar">
-      <li id="home"><a href="#">Home</a></li>
-      <li><a href="#">Not A Blog</a></li>
-      <li><a href="#">About George</a></li>
-      <li><a href="#">Books</a></li>
-      <li><a href="#">For Fans</a></li>
-      <li><a href="#">News</a></li>
-      <li><a href="#">Merchandise</a></li>
-
-    </ul>
-
+    <main>
       <div class="flex-container">
         <img id="fireBlood" src="../../images/FireBlood.jpeg" alt="">
       </div>
@@ -285,6 +284,7 @@
               books in the pipeline.   FULL HOUSE will be a collection of…</p>
       </div>
     </div>
+    </main>
       <footer style="text-align: center; padding-top: 370px; padding-bottom: 20px;">
         &copy; 2022 George R.R. Martin. All Rights Reserved.
       </footer>
