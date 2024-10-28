@@ -1,0 +1,418 @@
+/* Font */
+@font-face {
+  font-family: 'Bright';
+  src: url('fonts/bright.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dro';
+  src: url('fonts/Dro.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-image: url('textures/paper.png'); /* Pale beige paper texture */
+    background-size: auto;
+    margin: 0;
+    padding: 0;
+    color: #2F2F2F; /* Deep Charcoal for text */
+}
+
+a {
+    text-decoration: none;
+    color: #2F2F2F;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Navbar for Desktop */
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    font-size: 50px;
+    font-family: 'Bright';
+    font-weight: normal;
+    padding: 10px 20px;
+    color: #E57A44; /* Deep Charcoal */
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+ /* Warm Tan on hover */
+    color: #74A651;
+}
+
+/* Mobile Menu (Hamburger Icon) */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #2F2F2F; /* Deep Charcoal */
+    transition: all 0.3s ease;
+}
+
+/* Hide the menu by default on mobile */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+
+@media (max-width: 768px) {
+    /* Hamburger menu icon on mobile */
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 30px;
+    }
+
+    /* Hide nav links by default */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #2F2F2F; /* Warm Tan */
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* Show the nav when active */
+    .nav-links.active {
+        display: flex;
+    }
+
+    /* Style for links inside the mobile menu */
+    nav ul li a {
+        font-size: 24px;
+        padding: 10px;
+    }
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+    background-color: rgba(117, 48, 34, 0); /* Medium Blue */
+    margin: 50px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.0);
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 25vw;
+    max-width: 350px;
+    height: 25vw;
+    max-height: 350px;
+    object-fit: cover;
+    border: 5px dashed #487334; /* Photo Border */
+    margin: 50px;
+}
+
+.hero-text h1 {
+    font-family: 'Bright';
+    font-size: 8vw;
+    font-weight: inherit;
+    color:  #487334; /* Olive */
+    margin-bottom: auto;
+}
+
+.hero-text p {
+    font-family: 'Bright';
+    font-size: 4vw;
+    color: #403A28; /* Dark Green */
+    margin: auto;
+}
+
+@media screen and (min-width: 1600px) {
+.hero-text h1 {
+    font-size: 130px; /* maximum font size at 1600px width */
+  }
+
+.hero-text p {
+    font-size: 65px;
+  }
+}
+
+/* Skills Section */
+.skills {
+    padding: 50px 20px;
+    text-align: center;
+    margin: auto;
+}
+
+.skills h2 {
+    font-family: 'Bright';
+    font-size: 7vw;
+    font-weight: normal;
+    color: #E57A44; /* Faded Scarlet */
+    margin: auto;
+}
+
+.skills-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.skill-card {
+    background-color: #487334; /* Faded Scarlet */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(116, 166, 81, 0.6);
+    transition: transform 0.3s ease;
+    color: white;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+}
+
+.skill-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.portfolio h2 {
+    font-family: 'Bright';
+    font-size: 7vw;
+    font-weight: normal;
+    color: #E57A44; /* Faded Scarlet */
+    margin: auto;
+}
+
+.portfolio-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.portfolio-card {
+    background-color: #487334; /* Olive Green */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(116, 166, 81, 0.6);
+    transition: transform 0.3s ease;
+    color: white;
+    width: 300px;
+    text-align: center;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Resume Section */
+.resume {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.resume h1 {
+    font-family: 'Bright';
+    font-size: 7vw;
+    font-weight: normal;
+    color: #487334; /* Olive */
+    margin-bottom: 30px;
+}
+
+.resume-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.resume-iframe {
+    width: 80%;
+    height: 500px;
+    border: 3px solid #487334; /* Olive */
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(116, 166, 81, 0.6);
+}
+
+.download-button button {
+    background-color: #E57A44; /* Burnt Orange */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.download-button button:hover {
+    background-color: #487334; /* Olive */
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact h1 {
+    font-family: 'Bright';
+    font-size: 7vw;
+    font-weight: normal;
+    color: #487334; /* Olive */
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    color: #403A28; /* Dark Green */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-info a {
+    color: #E57A44; /* Burnt Orange */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: #487334; /* Olive */
+}
+
+.contact-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.contact-buttons button {
+    background-color: #E57A44; /* Burnt Orange */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+    font-family: 'Bright', sans-serif;
+}
+
+.contact-buttons button:hover {
+    background-color: #487334; /* Olive */
+}
+
+/* Mobile-only styles for text button */
+.mobile-only {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mobile-only {
+        display: inline;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #2F2F2F; /* Deep Charcoal */
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+footer button {
+    background-color: #E57A44; /* Burnt Orange */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+footer button:hover {
+    background-color: #74A651; /* Mustard Yellow */
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Sticky Footer for Contact Page */
+body.contact-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.contact {
+    flex: 1; /* Ensures the contact section takes up available space */
+}
+
+footer.contact-footer {
+    margin-top: auto;
+}
+
+/* Color Theme Swatches in Hex */
+.Woodsy-1-hex { color: #487334; }
+.Woodsy-2-hex { color: #74A651; }
+.Woodsy-3-hex { color: #425931; }
+.Woodsy-4-hex { color: #403A28; }
+.Woodsy-5-hex { color: #D9BC9A; }
+
+/* Color Theme Swatches in RGBA */
+.Woodsy-1-rgba { color: rgba(72, 114, 52, 1); }
+.Woodsy-2-rgba { color: rgba(116, 165, 80, 1); }
+.Woodsy-3-rgba { color: rgba(66, 89, 49, 1); }
+.Woodsy-4-rgba { color: rgba(63, 58, 40, 1); }
+.Woodsy-5-rgba { color: rgba(216, 188, 154, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Woodsy-1-hsla { color: hsla(100, 37, 32, 1); }
+.Woodsy-2-hsla { color: hsla(95, 34, 48, 1); }
+.Woodsy-3-hsla { color: hsla(94, 28, 27, 1); }
+.Woodsy-4-hsla { color: hsla(45, 23, 20, 1); }
+.Woodsy-5-hsla { color: hsla(32, 45, 72, 1); }
