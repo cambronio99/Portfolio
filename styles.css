@@ -1,14 +1,14 @@
 /* Font */
 @font-face {
   font-family: 'Bright';
-  src: url('fonts/bright.otf') format('opentype');
+  src: url('fonts/bright.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Dro';
-  src: url('fonts/Dro.ttf') format('truetype');
+  src: url('fonts/Dro.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
