@@ -1,7 +1,7 @@
 /* Font */
 @font-face {
   font-family: 'Bright';
-  src: url('fonts/bright.woff') format('woff');
+  src: url('fonts/Bright.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,9 @@
 
 /* General Styles */
 body {
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 100;
+    font-style: normal;
     background-image: url('textures/paper.png'); /* Pale beige paper texture */
     background-size: auto;
     margin: 0;
@@ -193,6 +195,7 @@ nav ul li a:hover {
     border-radius: 10px;
     box-shadow: 0px 5px 10px rgba(116, 166, 81, 0.6);
     transition: transform 0.3s ease;
+    font-size: 2vw;
     color: white;
 }
 
