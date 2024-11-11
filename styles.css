@@ -324,33 +324,70 @@ nav ul li a:hover {
     transform: translateY(-10px);
 }
 
-/* Resume Section */
+/* Resume Page Specific Styling */
 .resume {
     padding: 50px 20px;
     text-align: center;
+    font-family: 'Bright', sans-serif;
+    color: #2F2F2F; /* Deep Charcoal */
 }
 
 .resume h1 {
     font-family: 'Bright';
     font-size: 7vw;
-    font-weight: normal;
-    color: #487334; /* Olive */
+    color: #E57A44; /* Burnt Orange */
     margin-bottom: 30px;
+    font-weight: normal;
 }
 
+/* Use Bebas Neue for non-header text by default */
 .resume-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
-.resume-iframe {
-    width: 80%;
-    height: 500px;
-    border: 3px solid #487334; /* Olive */
-    border-radius: 10px;
-    box-shadow: 0px 5px 10px rgba(116, 166, 81, 0.6);
+.resume-content p, .resume-content h3, .resume-content ul {
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.resume-content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.resume h2 {
+    font-family: 'Bright';
+    font-size: 5vw;
+    color: #487334; /* Olive */
+    margin-top: 40px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.resume h3 {
+    font-size: 24px;
+    color: #74A651; /* Light Olive Green */
+    font-family: 'Bebas Neue', sans-serif; /* Ensure subheadings use Bebas Neue */
+}
+
+.resume-content ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    color: #2F2F2F;
+}
+
+.resume-content ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.download-button {
+    margin-top: 30px;
+    text-align: center;
 }
 
 .download-button button {
@@ -362,13 +399,12 @@ nav ul li a:hover {
     cursor: pointer;
     transition: background-color 0.3s ease;
     font-size: 18px;
-    font-family: sans-serif;
+    font-family: 'Bebas Neue', sans-serif; /* Ensure button text uses Bebas Neue */
 }
 
 .download-button button:hover {
     background-color: #487334; /* Olive */
 }
-
 /* Contact Section */
 .contact {
     padding: 50px 20px;
