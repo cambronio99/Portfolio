@@ -1,28 +1,40 @@
 /* Font */
 @font-face {
-  font-family: 'Bright';
-  src: url('https://cambronio99.github.io/Portfolio/fonts/Bright.otf') format('opentype');
+  font-family: 'Caliste';
+  src: url('https://cambronio99.github.io/Portfolio/fonts/Caliste.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Dro';
-  src: url('https://cambronio99.github.io/Portfolio/fonts/Dro.ttf') format('truetype');
+  font-family: 'Griffiths';
+  src: url('https://cambronio99.github.io/Portfolio/fonts/Griffiths.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Collingar';
+  src: url('https://cambronio99.github.io/Portfolio/fonts/Collingar.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 /* General Styles */
 body {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 100;
+    font-family: "Caliste", sans-serif;
+    font-weight: 100px;
     font-style: normal;
-    background-image: url('textures/paper.png'); /* Pale beige paper texture */
-    background-size: auto;
+    background-image: url('textures/greenpaper.png'); /* Pale beige paper texture */
+    background-size: 550px;
     margin: 0;
     padding: 0;
-    color: #2F2F2F; /* Deep Charcoal for text */
+    color: #FFFDD0; /* Cream for text */
 }
 
 a {
@@ -48,16 +60,16 @@ nav ul li {
 
 nav ul li a {
     font-size: 50px;
-    font-family: 'Bright';
+    font-family: 'Caliste';
     font-weight: normal;
     padding: 10px 20px;
-    color: #E57A44; /* Deep Charcoal */
+    color: #FFFDD0; /* Deep Charcoal */
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
  /* Warm Tan on hover */
-    color: #74A651;
+    color: #C6D9B4;
 }
 
 /* Mobile Menu (Hamburger Icon) */
@@ -71,8 +83,8 @@ nav ul li a:hover {
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    background-color: #2F2F2F; /* Deep Charcoal */
-    transition: all 0.3s ease;
+    background-color: #FFFDD0; /* Deep Charcoal */
+    transition: all 1s ease;
 }
 
 /* Hide the menu by default on mobile */
@@ -138,22 +150,22 @@ nav ul li a:hover {
     height: 25vw;
     max-height: 350px;
     object-fit: cover;
-    border: 5px dashed #487334; /* Photo Border */
+    border: 5px dashed #FFFDD0; /* Photo Border */
     margin: 50px;
 }
 
 .hero-text h1 {
-    font-family: 'Bright';
-    font-size: 8vw;
+    font-family: 'Caliste';
+    font-size: 5.2vw;
     font-weight: inherit;
-    color:  #487334; /* Olive */
+    color: #FFFDD0; /* Cream */
     margin-bottom: auto;
 }
 
 .hero-text p {
-    font-family: 'Bright';
-    font-size: 4vw;
-    color: #403A28; /* Dark Green */
+    font-family: 'Caliste';
+    font-size: 2.5vw;
+    color: #012E40; /* Navy Blue */
     margin: auto;
 }
 
@@ -201,11 +213,10 @@ nav ul li a:hover {
 }
 
 .skills h2 {
-    font-family: 'Bright';
+    font-family: 'Caliste';
     font-size: 7vw;
     font-weight: normal;
-    color: #E57A44; /* Faded Scarlet */
-    margin: auto;
+    color: #012E40; /* Faded Scarlet */
 }
 
 .skills-grid {
@@ -216,13 +227,13 @@ nav ul li a:hover {
 }
 
 .skill-card {
-    background-color: #487334; /* Faded Scarlet */
+    background-color: #C6D9B4; /* Faded Scarlet */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 5px 10px rgba(116, 166, 81, 0.6);
     transition: transform 0.3s ease;
     font-size: 2vw;
-    color: white;
+    color: #012E40;
 }
 
 .skill-card:hover {
@@ -236,7 +247,7 @@ nav ul li a:hover {
 }
 
 /* Media Query for Mobile Devices */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     /* Hamburger menu icon on mobile */
     .menu-toggle {
         display: block;
@@ -249,7 +260,7 @@ nav ul li a:hover {
     .nav-links {
         display: none;
         flex-direction: column;
-        background-color: #2F2F2F; /* Deep Charcoal */
+        background-color: #032612; /* Deep Charcoal */
         position: fixed;
         top: 0;
         left: 0;
@@ -295,10 +306,10 @@ nav ul li a:hover {
 }
 
 .portfolio h2 {
-    font-family: 'Bright';
+    font-family: 'Caliste';
     font-size: 7vw;
     font-weight: normal;
-    color: #E57A44; /* Faded Scarlet */
+    color: #012E40; /* Faded Scarlet */
     margin: auto;
 }
 
@@ -310,30 +321,31 @@ nav ul li a:hover {
 }
 
 .portfolio-card {
-    background-color: #487334; /* Olive Green */
+    background-color: #C6D9B4; /* Olive Green */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 5px 10px rgba(116, 166, 81, 0.6);
     transition: transform 0.3s ease;
-    color: white;
+    color: #012E40;
     width: 300px;
+    font-family: 'Ethereal';
     text-align: center;
 }
 
 .portfolio-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
 }
 
 /* Resume Page Specific Styling */
 .resume {
     padding: 50px 20px;
     text-align: center;
-    font-family: 'Bright', sans-serif;
+    font-family: 'Caliste', sans-serif;
     color: #2F2F2F; /* Deep Charcoal */
 }
 
 .resume h1 {
-    font-family: 'Bright';
+    font-family: 'Caliste';
     font-size: 7vw;
     color: #E57A44; /* Burnt Orange */
     margin-bottom: 30px;
@@ -359,7 +371,7 @@ nav ul li a:hover {
 }
 
 .resume h2 {
-    font-family: 'Bright';
+    font-family: 'Caliste';
     font-size: 5vw;
     color: #487334; /* Olive */
     margin-top: 40px;
@@ -391,7 +403,7 @@ nav ul li a:hover {
 }
 
 .download-button button {
-    background-color: #E57A44; /* Burnt Orange */
+    background-color: #85A665; /* Burnt Orange */
     color: white;
     padding: 10px 20px;
     border: none;
@@ -399,12 +411,81 @@ nav ul li a:hover {
     cursor: pointer;
     transition: background-color 0.3s ease;
     font-size: 18px;
-    font-family: 'Bebas Neue', sans-serif; /* Ensure button text uses Bebas Neue */
+    font-family: 'Caliste', sans-serif; /* Ensure button text uses Bebas Neue */
 }
 
 .download-button button:hover {
-    background-color: #487334; /* Olive */
+    background-color: #0F8C3B; /* Olive */
 }
+
+/* Gallery Section */
+.gallery {
+  padding: 40px 5%;
+  text-align: center;
+  font-size: 3.5vw;
+  color: #012E40;
+}
+
+.project-group {
+  margin-bottom: 20px;
+}
+
+.project-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 0px; /* 20px vertical, 0px horizontal */
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.project-images img {
+  height: auto; /* or a consistent percentage if needed */
+  margin-bottom: 30px; /* extra cushion if needed */
+  object-fit: contain;
+  flex: 1 1 200px;
+  max-width: 40%;
+  transition: transform 0.3s ease;
+}
+
+.project-images img:hover {
+  transform: scale(1.05);
+}
+
+.project-label {
+  font-family: 'Griffiths';
+  font-size: 4vw;
+  color: #BADCAA;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.description-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Remove this if you don’t want vertical centering */
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.description-box {
+  background-color: #C6D9B4;
+  border-radius: 16px;
+  padding: 16px;
+  margin-top: 4px;
+  max-width: 100vw;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: serif;
+  justify-content: center;
+  align-items: center;
+  color: #012E40;
+  box-shadow: 0px 5px 10px rgba(116, 166, 81, 0.6);
+}
+
+.description-box p {
+  font-size: 25px;
+  line-height: 1;
+}
+
 /* Contact Section */
 .contact {
     padding: 50px 20px;
@@ -412,17 +493,17 @@ nav ul li a:hover {
 }
 
 .contact h1 {
-    font-family: 'Bright';
+    font-family: 'Caliste';
     font-size: 7vw;
     font-weight: normal;
-    color: #487334; /* Olive */
+    color: #FFFDD0; /* Olive */
     margin-bottom: 30px;
 }
 
 .contact-info {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 18px;
-    color: #403A28; /* Dark Green */
+    font-family: 'Griffiths', sans-serif;
+    font-size: 50px;
+    color: #FFFDD0; /* Dark Green */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -430,13 +511,13 @@ nav ul li a:hover {
 }
 
 .contact-info a {
-    color: #E57A44; /* Burnt Orange */
+    color: #012E40; /* Burnt Orange */
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .contact-info a:hover {
-    color: #487334; /* Olive */
+    color: #C6D9B4; /* Olive */
 }
 
 .contact-buttons {
@@ -454,7 +535,7 @@ nav ul li a:hover {
     cursor: pointer;
     transition: background-color 0.3s ease;
     font-size: 18px;
-    font-family: 'Bright', sans-serif;
+    font-family: 'Caliste', sans-serif;
 }
 
 .contact-buttons button:hover {
@@ -474,6 +555,7 @@ nav ul li a:hover {
 
 /* Footer */
 footer {
+    font-family: 'Griffiths';
     background-color: #2F2F2F; /* Deep Charcoal */
     padding: 20px;
     text-align: center;
@@ -481,7 +563,7 @@ footer {
 }
 
 footer button {
-    background-color: #E57A44; /* Burnt Orange */
+    background-color: #85A665; /* Burnt Orange */
     color: white;
     padding: 10px 20px;
     border: none;
@@ -491,12 +573,13 @@ footer button {
 }
 
 footer button:hover {
-    background-color: #74A651; /* Mustard Yellow */
+    background-color: #0F8C3B; /* Mustard Yellow */
 }
 
 footer p {
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 25px;
+    color: #FFFDD0;
 }
 
 /* Sticky Footer for Contact Page */
