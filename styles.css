@@ -597,6 +597,13 @@ footer.contact-footer {
     margin-top: auto;
 }
 
+.rubric {
+  text-align: center;
+  font-size: 35px;
+  margin: 20px;
+  font-family: 'Griffiths'
+}
+
 /* Color Theme Swatches in Hex */
 .Woodsy-1-hex { color: #487334; }
 .Woodsy-2-hex { color: #74A651; }
