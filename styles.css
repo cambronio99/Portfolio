@@ -8,14 +8,14 @@
 
 @font-face {
   font-family: 'Griffiths';
-  src: url('https://cambronio99.github.io/Portfolio/fonts/Griffiths.otf') format('truetype');
+  src: url('https://cambronio99.github.io/Portfolio/fonts/Griffiths.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Collingar';
-  src: url('https://cambronio99.github.io/Portfolio/fonts/Collingar.otf') format('truetype');
+  src: url('https://cambronio99.github.io/Portfolio/fonts/Collingar.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
